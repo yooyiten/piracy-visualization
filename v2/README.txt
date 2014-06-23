@@ -1,9 +1,4 @@
-Yoora Yi Tenen
-Sean Nealon
-
-CS171 Project 3
-
-/index.html (our visualization with embedded video)
+/index.html (our visualization)
 
 /data
     -fora.json (the data used for the visualization, fed in with d3.json)

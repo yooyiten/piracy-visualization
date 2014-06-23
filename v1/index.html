@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pirated Book Network</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/classic.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!--- library files hosted in folder in order to test on Google Drive --->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jQDateRangeSlider-min.js"></script>
+    <script src="js/colorbrewer.js"></script>
+    <script src="js/d3.v3.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+   
+   <div id="head" class="head">
+    Pirated Book Network
+    <br />
+    <span class="desc">
+        Sean Nealon | Yoora Yi Tenen
+        <br /><br />
+        This visualization features data scraped in April 2013 from rutracker.org, a community supporting Library Genesis, the largest online library of pirated books. Our goal was to 
+        analyze both the seeding and commenting activity of the rutracker.org forums, in order to ascertain any patterns in top seeding in addition to the social dynamics of the overall forum.
+        The project was undertaken to help further the work of piracy.lab at Columbia University, a developing research collective studying the nature of information piracy and its impact on global literary culture.<br /><br />
+        Due to the breadth of our full data set (over 16,000 users and over 1,700,000 comments), we chose to illustrate the activity of just the "Photo and Video" book category. We utilize a traditional network graph, in which nodes represent users and edges represent interactions between users. We are defining an interaction as any instance where a user commented in a forum thread where another user shared a torrent. There are options to filter the visualization based on a user's total seed count and interactions, as well as a few display options. Please view the screencast at the right for an overview of the visualization.
+    </span>
+   </div>
+
+   <div id="ctrl_seed" class="ctrl_seed">
+   		<b>Total Seed Count:</b>
+        <br />
+        <br />
+        <form id="ctrlseed">
+            <input id="countall" type="radio" name="seedcount" value="-1" checked />
+            <label for="countall" id="lblscall">All</label>
+            <br />
+            <input id="count0" type="radio" name="seedcount" value="0" />
+            <label for="count0" id="lblsc0">0 (leechers)</label>
+            <br />
+            <input id="count1" type="radio" name="seedcount" value="1" />
+            <label for="count1" id="lblsc1">Greater than 0</label>
+            <br />
+            <input id="count11" type="radio" name="seedcount" value="11" />
+            <label for="count11" id="lblsc11">Greater than 10</label>
+            <br />
+            <input id="count51" type="radio" name="seedcount" value="51" />
+            <label for="count51" id="lblsc51">Greater than 50</label>
+        </form>
+   </div>
+
+   <div id="ctrl_edge" class="ctrl_edge">
+        <b>Total Interactions:</b>
+        <br />
+        <br />
+        <form id="ctrledge">
+            <input id="edgeall" type="radio" name="edgetotal" value="-1" checked />
+            <label for="edgeall" id="lbletall">All</label>
+            <br />
+            <input id="edge0" type="radio" name="edgetotal" value="0" />
+            <label for="edge0" id="lblet0">0</label>
+            <br />
+            <input id="edge1" type="radio" name="edgetotal" value="1" />
+            <label for="edge1" id="lblet1">Greater than 0</label>
+            <br />
+            <input id="edge11" type="radio" name="edgetotal" value="11" />
+            <label for="edge11" id="lblet11">Greater than 10</label>
+            <br />
+            <input id="edge51" type="radio" name="edgetotal" value="51" />
+            <label for="edge51" id="lblet51">Greater than 50</label>
+        </form>
+   </div>
+
+   <div id="ctrl_toggle" class="ctrl_toggle">
+        <b>Options:</b>
+        <br />
+        <br />
+        <form id="ctrltoggle">
+            <input id="tognode" type="checkbox" name="toggle" checked />
+            <label for="tognode" id="lblnode">Encode node size with seed count</label>
+            <br />
+            <input id="togweight" type="checkbox" name="toggle" />
+            <label for="togweight" id="lblweight">Encode edge thickness with edge weight</label>
+            <br />
+            <input id="togedge" type="checkbox" name="toggle" checked />
+            <label for="togedge" id="lbledge">Display edges</label>
+            <br />
+            <input id="togdate" type="checkbox" name="toggle" />
+            <label for="togdate" id="lbldate">Display seeders only</label>
+        </form>
+   </div>
+
+   <div id="profile" class="profile">
+        <b>Hover over a node to display information about the user.</b>
+   </div>
+
+   <div id="time_slide" class="time_slide">
+   </div>
+   <div id="slidetxt" class="slidetxt"></div>
+
+  </body>
+</html>

@@ -1,0 +1,136 @@
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 12px;
+  background-color: #fff;
+  margin: 30px;	
+}
+
+.invisible {
+  display: none;
+}
+
+#head {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  width: 650px;
+  height: 300px;
+}
+
+.desc {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.cont {
+  position: absolute;
+  left: 100px;
+  top: 310px;
+  height: 350px;
+}
+
+.pie {
+  position: absolute;
+  left: 200px;
+  top: 320px;
+  height: 350px;
+}
+
+.graph {
+  position: absolute;
+  left: 700px;
+  top: 310px;
+  width: 550px;
+  height: 550px;
+}
+
+.graphlbl {
+  position: absolute;
+  left: 730px;
+  top: 635px;
+  color: #555555;
+  font-weight: bold;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
+.domain {
+  fill: none;
+  stroke: #000;
+  stroke-width: 1;
+  shape-rendering: crispEdges;
+}
+
+.line {
+  fill: none;
+  stroke: #555555;
+  stroke-width: 1.5px;
+}
+
+.forumtip {
+  position: absolute;
+  background-color: #FEE6CE;
+  border-style: solid;
+  border-color: #000;
+  border-width: 1px;
+  padding: 2px;
+  opacity: .8;
+}
+
+.story {
+  position: absolute;
+  color: #444;
+  background-color: #DDDDDD;
+  left: 110px;
+  top: 140px;
+  width: 530px;
+  height: 150px;
+  padding: 5px;
+}
+
+.slide_button {
+  position: absolute;
+  left: 110px;
+  top: 705px;
+  width: 520px;
+  height: 100px;
+  font-size: 10px;
+  font-family: Verdana, sans-serif;
+}
+
+.time_slide {
+  position: absolute;
+  left: 110px;
+  top: 680px;
+  width: 540px;
+}
+
+.slidetxt {
+  position: absolute;
+  left: 110px;
+  top: 650px;
+  width: 520px;
+  padding: 3px;
+  font-size: 10px;
+  font-weight: bold;
+  font-family: Verdana, sans-serif;
+}
+
+#video {
+  position: absolute;
+  left: 110px;
+  top: 800px;
+  width: 640px;
+  height: 480px;
+  border-width: 1px;
+  border-style: solid;
+}

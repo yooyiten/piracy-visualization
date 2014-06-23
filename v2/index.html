@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pirated Book Network</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!--- library files hosted in folder in order to test on Google Drive --->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/colorbrewer.js"></script>
+    <script src="js/d3.v3.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+   
+   <div id="head" class="head">
+    Pirated Book Network
+    <br />
+    <span class="desc">
+        Sean Nealon | Yoora Yi Tenen
+    </span>
+   </div>
+
+   <div id="story" class="story">
+        <br />
+        This visualization features data scraped in April 2013 from rutracker.org, a community supporting Library Genesis, the largest online library of pirated books. Our goal was to examine trends in the seeding activity of the forums by topic.
+        <br /><br />
+        Each square in the heatmap represents a main forum and can be clicked to display a breakdown of its subforums. Use the slider to move through time by yearly quarter; clicking the play button will go through the quarters in slideshow fashion.
+   </div>
+
+   <div id="slidetxt" class="slidetxt">total seeds</div>
+
+   <div id="slide_button" class="slide_button">
+    <button type="button" id="playbutton">Play</button>
+    <button type="button" id="pausebutton">Pause</button>
+   </div>
+   
+   <div id="time_slide" class="time_slide"></div>
+
+   <div id="graphlbl" class="graphlbl"></div>
+
+  </body>
+</html>
